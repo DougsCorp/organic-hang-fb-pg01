@@ -1,0 +1,7 @@
+﻿sd-pdp2 — PDP sem referência do avatar
+
+Esta é a página PDP (Product Detail Page) baseada em sd-pdp / fb-pg01,
+porém SEM o header do especialista (bloco Dr. Hang / avatar / Artisan Production).
+
+Use esta pasta quando precisar da versão sem referência visual do avatar.
+A versão COM o avatar do especialista fica em: sd-pdp
