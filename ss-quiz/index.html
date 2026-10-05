@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yjtaa7652h");
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Unlock Your Private Video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cta: #479c1a;
+      --cta-d: #3b8215;
+      --cta-sh: rgba(71, 156, 26, 0.35);
+      --navy: #0a1c4e;
+      --ink: #1d254b;
+      --muted: #657d96;
+      --gold: #e19626;
+      --line: #d8e0ec;
+      --soft: #eef2f8;
+      --bg: #f6f8fb;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(1200px 500px at 50% -10%, rgba(225, 150, 38, 0.18), transparent 60%),
+        linear-gradient(180deg, #f3f6fb 0%, #e8eef7 100%);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .ssq-shell {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 24px 12px 40px;
+    }
+
+    .ssq-card {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      margin: 4vh auto 0;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 24px 70px rgba(10, 28, 78, 0.18);
+      padding: 34px 26px 30px;
+    }
+
+    .ssq-progress {
+      height: 8px;
+      background: var(--soft);
+      border-radius: 99px;
+      overflow: hidden;
+      margin: 0 0 22px;
+    }
+    .ssq-progress i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #1d254b, #0a1c4e);
+      border-radius: 99px;
+      transition: width 0.35s ease;
+    }
+
+    .ssq-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 8px;
+    }
+    .ssq-q {
+      font-family: "Bitter", Georgia, serif;
+      font-size: 23px;
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--navy);
+      margin: 0 0 6px;
+    }
+    .ssq-hint {
+      font-size: 13.5px;
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .ssq-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ssq-opt {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      width: 100%;
+      text-align: left;
+      background: var(--bg);
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 15.5px;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      font-family: inherit;
+    }
+    .ssq-opt:hover { border-color: var(--gold); }
+    .ssq-opt.sel {
+      border-color: var(--navy);
+      background: var(--soft);
+    }
+    .ssq-opt.sel::after {
+      content: "✓";
+      margin-left: auto;
+      flex: 0 0 auto;
+      color: var(--navy);
+      font-weight: 800;
+    }
+    .ssq-emo {
+      flex: 0 0 auto;
+      width: 1.35em;
+      font-size: 19px;
+      line-height: 1;
+      text-align: center;
+      font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    }
+    .ssq-lbl {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .ssq-continue,
+    .ssq-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: 0.3px;
+      padding: 19px 22px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      background: var(--cta);
+      color: #fff;
+      box-shadow: 0 6px 22px var(--cta-sh);
+      text-decoration: none;
+      transition: background 0.15s ease, box-shadow 0.15s ease;
+    }
+    .ssq-continue { margin-top: 18px; }
+    .ssq-continue:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .ssq-continue:hover:not(:disabled),
+    .ssq-cta:hover {
+      background: var(--cta-d);
+      box-shadow: 0 8px 26px var(--cta-sh);
+    }
+
+    .ssq-back {
+      background: none;
+      border: 0;
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+      margin-top: 14px;
+      padding: 4px;
+      font-family: inherit;
+    }
+    .ssq-back:hover {
+      color: var(--navy);
+      text-decoration: underline;
+    }
+
+    .ssq-loader {
+      text-align: center;
+      padding: 36px 6px 30px;
+    }
+    .ssq-spin {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      border: 8px solid #f0ead8;
+      border-top-color: var(--gold);
+      margin: 0 auto 26px;
+      animation: ssqspin 1s linear infinite;
+    }
+    @keyframes ssqspin {
+      to { transform: rotate(360deg); }
+    }
+    .ssq-loadtitle {
+      font-family: "Bitter", Georgia, serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0 0 12px;
+    }
+    .ssq-wait {
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0;
+    }
+
+    .ssq-res { text-align: center; }
+    .ssq-badge {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 99px;
+      padding: 6px 14px;
+      margin: 0 0 10px;
+    }
+    .ssq-restitle {
+      font-family: "Bitter", Georgia, serif;
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--navy);
+      margin: 0 0 12px;
+    }
+    .ssq-restitle b { color: var(--gold); }
+    .ssq-est {
+      background: #fff8f0;
+      border: 2px solid #c2410c;
+      border-radius: 12px;
+      padding: 14px 14px 12px;
+      margin: 0 0 14px;
+      text-align: left;
+    }
+    .ssq-est h4 {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #9a3412;
+      margin: 0 0 6px;
+    }
+    .ssq-est .big {
+      font-family: "Bitter", Georgia, serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+    .ssq-est p {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #33415e;
+      margin: 0;
+    }
+    .ssq-scarce {
+      margin: 0 0 12px;
+      text-align: left;
+    }
+    .ssq-scarce .bar {
+      height: 10px;
+      background: var(--soft);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .ssq-scarce .bar i {
+      display: block;
+      height: 100%;
+      width: 82%;
+      background: linear-gradient(90deg, #991b1b, #e19626);
+      border-radius: 99px;
+    }
+    .ssq-scarce span {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #991b1b;
+      margin-top: 5px;
+    }
+    .ssq-ship {
+      font-size: 12.5px;
+      color: var(--ink);
+      margin: 0 0 14px;
+    }
+    .ssq-cta {
+      animation: ssqpulse 1.6s ease-in-out infinite;
+    }
+    @keyframes ssqpulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.025); }
+    }
+    .ssq-card.res {
+      padding: 26px 18px 18px;
+    }
+    .ssq-card.res .ssq-progress { display: none; }
+
+    @media (max-width: 768px), (max-height: 860px) {
+      .ssq-shell { padding: 8px; }
+      .ssq-card {
+        margin: 0 auto;
+        padding: 16px 14px 14px;
+        border-radius: 14px;
+      }
+      .ssq-progress { height: 6px; margin: 0 0 12px; }
+      .ssq-kicker { font-size: 11px; margin: 0 0 5px; }
+      .ssq-q { font-size: 18px; margin: 0 0 4px; }
+      .ssq-hint { font-size: 12px; margin: 0 0 9px; }
+      .ssq-opts { gap: 6px; }
+      .ssq-opt {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 9px;
+        gap: 9px;
+      }
+      .ssq-emo { font-size: 17px; }
+      .ssq-back { font-size: 12px; margin-top: 8px; }
+      .ssq-continue { margin-top: 12px; }
+      .ssq-loadtitle { font-size: 20px; }
+      .ssq-restitle { font-size: 19px; }
+    }
+
+    @media (max-height: 700px) {
+      .ssq-card { padding: 12px; }
+      .ssq-q { font-size: 17px; }
+      .ssq-opt { padding: 7px 11px; font-size: 13.5px; }
+      .ssq-continue, .ssq-cta {
+        font-size: 15px;
+        padding: 13px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ssq-shell">
+    <div class="ssq-card">
+      <div class="ssq-progress" id="ssqProg"><i></i></div>
+      <div id="ssqBody"></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var VIDEO_URL = "../fb-pg01/";
+
+      var QS = [
+        {
+          k: "Step 1 of 6 – About You",
+          e: ["👩", "👩‍🦰", "👩‍🦱", "👩‍🦳", "👵"],
+          q: "What is your age range?",
+          multi: false,
+          o: ["Under 35", "35–44", "45–54", "55–64", "65+"],
+        },
+        {
+          k: "Step 2 of 6 – Symptoms",
+          e: ["😴", "🫃", "🍫", "🌡️", "😟", "🔁", "✅"],
+          q: "Which of these do you currently experience?",
+          multi: true,
+          hint: "Select all that apply – then hit Continue",
+          o: [
+            "Fatigue & low energy",
+            "Belly bloating",
+            "Sugar cravings",
+            "Slow metabolism",
+            "Mood swings",
+            "Weight keeps coming back",
+            "None of the above",
+          ],
+        },
+        {
+          k: "Step 3 of 6 – Your Body",
+          e: ["⬇️", "↘️", "➡️", "↗️", "⬆️"],
+          q: "What is your current weight range?",
+          multi: false,
+          o: [
+            "Under 140 lbs",
+            "140–169 lbs",
+            "170–199 lbs",
+            "200–229 lbs",
+            "230 lbs or more",
+          ],
+        },
+        {
+          k: "Step 4 of 6 – Your Body",
+          e: ["🎯", "🔥", "💎", "🚀"],
+          q: "How much weight would you like to lose in 90 days?",
+          multi: false,
+          o: ["5–25 lbs", "26–50 lbs", "51–80 lbs", "80+ lbs"],
+        },
+        {
+          k: "Step 5 of 6 – Your Experience",
+          e: ["🥗", "🏃‍♀️", "🍬", "🥤", "💊", "💉", "🆕"],
+          q: "What have you already tried?",
+          multi: true,
+          hint: "Select all that apply – then hit Continue",
+          o: [
+            "Diet or calorie-counting programs",
+            "Exercise or workout plans",
+            "Gummies, teas, or fat burners",
+            "Baking soda water on its own",
+            "Berberine or another single ingredient",
+            "Weight-loss injections",
+            "Nothing yet",
+          ],
+        },
+        {
+          k: "Step 6 of 6 – Matcha",
+          e: ["💚", "📺", "✨", "❓"],
+          q: "Do you know or have you already tried Matcha?",
+          multi: false,
+          o: [
+            "Yes — I know someone who already lost several pounds with Matcha",
+            "Yes — I've seen it on TV programs",
+            "Never tried it, but I know it helps with weight loss and firmness",
+            "I don't know it",
+          ],
+        },
+      ];
+
+      var LOADERS = [
+        "Analyzing your answers…",
+        "Matching your profile…",
+        "Unlocking your private video access…",
+      ];
+
+      var body = document.getElementById("ssqBody");
+      var card = document.querySelector(".ssq-card");
+      var prog = document.querySelector("#ssqProg i");
+      var answers = [];
+      var step = 0;
+
+      function withParams(u) {
+        try {
+          var qs = location.search.replace(/^\?/, "");
+          if (!qs || u === "#") return u;
+          return u + (u.indexOf("?") > -1 ? "&" : "?") + qs;
+        } catch (e) {
+          return u;
+        }
+      }
+
+      function setProg(p) {
+        prog.style.width = p + "%";
+      }
+
+      function render() {
+        var Q = QS[step];
+        var sel = [];
+        setProg((step / QS.length) * 100);
+
+        var h = '<p class="ssq-kicker">' + Q.k + '</p><h3 class="ssq-q">' + Q.q + "</h3>";
+        h += Q.hint ? '<p class="ssq-hint">' + Q.hint + "</p>" : "";
+        h += '<div class="ssq-opts">';
+        Q.o.forEach(function (o, i) {
+          h +=
+            '<button type="button" class="ssq-opt" data-i="' +
+            i +
+            '">' +
+            (Q.e && Q.e[i] ? '<span class="ssq-emo">' + Q.e[i] + "</span>" : "") +
+            '<span class="ssq-lbl">' +
+            o +
+            "</span></button>";
+        });
+        h += "</div>";
+        if (Q.multi) {
+          h +=
+            '<button type="button" class="ssq-continue" id="ssqCont" disabled>Continue →</button>';
+        }
+        if (step > 0) {
+          h += '<button type="button" class="ssq-back" id="ssqBack">← Back</button>';
+        }
+        body.innerHTML = h;
+
+        var cont = document.getElementById("ssqCont");
+        body.querySelectorAll(".ssq-opt").forEach(function (btn) {
+          btn.onclick = function () {
+            var v = Q.o[+btn.dataset.i];
+            if (Q.multi) {
+              btn.classList.toggle("sel");
+              var idx = sel.indexOf(v);
+              if (idx > -1) sel.splice(idx, 1);
+              else sel.push(v);
+              cont.disabled = !sel.length;
+            } else {
+              btn.classList.add("sel");
+              answers[step] = v;
+              setTimeout(next, 220);
+            }
+          };
+        });
+
+        if (cont) {
+          cont.onclick = function () {
+            answers[step] = sel.slice();
+            next();
+          };
+        }
+
+        var back = document.getElementById("ssqBack");
+        if (back) {
+          back.onclick = function () {
+            step--;
+            render();
+          };
+        }
+      }
+
+      function next() {
+        step++;
+        if (step < QS.length) render();
+        else loader(0);
+      }
+
+      function loader(i) {
+        setProg(100);
+        body.innerHTML =
+          '<div class="ssq-loader"><div class="ssq-spin"></div><h3 class="ssq-loadtitle">' +
+          LOADERS[i] +
+          '</h3><p class="ssq-wait">Please wait</p></div>';
+        setTimeout(function () {
+          i + 1 < LOADERS.length ? loader(i + 1) : result();
+        }, 1400);
+      }
+
+      function result() {
+        setProg(100);
+        card.classList.add("res");
+        body.innerHTML =
+          '<div class="ssq-res">' +
+          '<span class="ssq-badge">Access approved</span>' +
+          '<h3 class="ssq-restitle">Your <b>step-by-step video</b> is unlocked</h3>' +
+          '<div class="ssq-est"><h4>⚠ Urgent notice</h4>' +
+          '<p class="big">We are getting alerts to take this video down.</p>' +
+          "<p>It will <b>not stay online for long</b>. Watch it all the way to the end <b>while you still can</b> — once it’s removed, this private access disappears with it.</p>" +
+          "</div>" +
+          '<div class="ssq-scarce"><div class="bar"><i></i></div><span>⚠ Removal pressure is rising — limited viewing window</span></div>' +
+          '<p class="ssq-ship">Do not skip ahead. The full explanation is only revealed if you stay until the end.</p>' +
+          '<a class="ssq-cta" href="' +
+          withParams(VIDEO_URL) +
+          '">WATCH THE STEP-BY-STEP VIDEO NOW →</a>' +
+          "</div>";
+      }
+
+      render();
+    })();
+  </script>
+</body>
+</html>
