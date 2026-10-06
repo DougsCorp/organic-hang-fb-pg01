@@ -561,6 +561,22 @@
         }
     </script>
 
+<script>
+  !function () {
+    var url = window.location.href;
+    url = url.split("?");
+    var additionalParam = "sub12=BckRdrct";
+    var queryParams = url[1] ? url[1] + "&" + additionalParam : additionalParam;
+    var t;
+    try {
+      for (t = 0; 10 > t; ++t) history.pushState({}, "", "");
+      onpopstate = function (t) {
+        t.state && location.replace("../pdp-leaftide/index.html?" + queryParams);
+      }
+    } catch (o) {}
+  }();
+  </script>
+
 </body>
 
 </html>
