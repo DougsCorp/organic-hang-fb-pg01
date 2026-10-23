@@ -1814,10 +1814,6 @@ main {
 	display: none !important;
 }
 
-.esconder {
-	display: none;
-}
-
 /* TODAY HEADER */
 .today-header {
 	font-family: 'Nunito', Arial, Helvetica, sans-serif;
